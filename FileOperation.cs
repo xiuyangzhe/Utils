@@ -25,20 +25,20 @@ namespace Sunyard.Common.Utils
             }
             catch (Exception ex)
             {
-               
+
                 throw ex;
             }
             return myStr;
         }
 
-        public static bool WriteFile(string path,string linestr)
+        public static bool WriteFile(string path, string linestr)
         {
-            using (var fs = new FileStream(path,FileMode.OpenOrCreate))
+            using (var fs = new FileStream(path, FileMode.OpenOrCreate))
             {
                 using (StreamWriter _writer = new StreamWriter(fs))
                 {
                     _writer.WriteLine();
-                    _writer.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")+linestr);
+                    _writer.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss") + linestr);
                     _writer.Flush();
                     return false;
                 }
