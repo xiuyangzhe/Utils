@@ -18,5 +18,18 @@ namespace Sunyard.Common.Utils
                 LogService.Debug(message);
             }
         }
+        public static Object GetFieldValue(object _object, string fieldname)
+        {
+            try
+            {
+                return _object.GetType().GetProperty(fieldname).GetValue(_object, null);
+            }
+            catch (Exception message)
+            {
+                LogService.Debug(message);
+            }
+            return null;
+        }
+
     }
 }

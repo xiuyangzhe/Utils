@@ -38,11 +38,24 @@ namespace Sunyard.Common.Utils
                 using (StreamWriter _writer = new StreamWriter(fs))
                 {
                     _writer.WriteLine();
-                    _writer.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss") + linestr);
+                    _writer.Write(linestr);
                     _writer.Flush();
                     return false;
                 }
             }
+        }
+        public static bool WriteFile(string path, byte[] bytes)
+        {
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            {
+
+                using (BinaryWriter bw = new BinaryWriter(fs))
+                {
+                    bw.Write(bytes);
+                    return true;
+                }
+            }
+
         }
     }
 }
