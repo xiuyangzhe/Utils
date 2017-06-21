@@ -7,6 +7,12 @@ namespace Sunyard.Common.Utils
 {
     public class Util
     {
+        /// <summary>
+        /// set object Property
+        /// </summary>
+        /// <param name="_object"></param>
+        /// <param name="fieldname"></param>
+        /// <param name="fieldvalue"></param>
         public static void SetFieldValue(object _object, string fieldname, object fieldvalue)
         {
             try
@@ -18,6 +24,13 @@ namespace Sunyard.Common.Utils
                 LogService.Debug(message);
             }
         }
+
+        /// <summary>
+        /// get object Property
+        /// </summary>
+        /// <param name="_object"></param>
+        /// <param name="fieldname"></param>
+        /// <returns></returns>
         public static Object GetFieldValue(object _object, string fieldname)
         {
             try
