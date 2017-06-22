@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
     public sealed class JsonTool
     {

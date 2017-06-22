@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
     public sealed class LogService
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
     public static class ExtendFunctions
     {

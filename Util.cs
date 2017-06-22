@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
-    public class Util
+    public sealed class Util
     {
         /// <summary>
         /// set object Property

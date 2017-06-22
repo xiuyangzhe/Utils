@@ -5,9 +5,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
-    public class RSAHelper
+    public sealed class RSAHelper
     {
         #region RSA 加密解密
         #region RSA 的密钥产生

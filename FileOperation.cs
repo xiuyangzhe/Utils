@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace Sunyard.Common.Utils
+namespace Zsq.Utils
 {
-    public class FileOperation
+    public sealed class FileOperation
     {
         public static string ReadFile(string path)
         {
