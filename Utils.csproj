@@ -42,6 +42,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sunyard.Common.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Sunyard.Common.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -70,13 +74,7 @@
   <ItemGroup>
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\Newtonsoft.Json.dll" />
-    <Content Include="lib\Zsq.Common.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{1F10A243-4E49-4F2E-B544-5974A33181FC}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
+    <Content Include="lib\Sunyard.Common.Common.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

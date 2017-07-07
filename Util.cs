@@ -39,7 +39,7 @@ namespace Zsq.Utils
             }
             catch (Exception message)
             {
-                LogService.Debug(message);
+                LogService.Error(message);
             }
             return null;
         }

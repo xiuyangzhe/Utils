@@ -10,7 +10,7 @@ namespace Zsq.Utils
         public static Int32 ToInt32(this string value)
         {
             Int32 i = 0;
-            int.TryParse(value,out i);
+            int.TryParse(value, out i);
             return i;
         }
 
@@ -25,6 +25,11 @@ namespace Zsq.Utils
         public static bool IsNullOrEmpty(this string inputvalue)
         {
             return string.IsNullOrEmpty(inputvalue);
+        }
+
+        public static bool IsNotNullOrEmpty(this string inputvalue)
+        {
+            return !string.IsNullOrEmpty(inputvalue);
         }
 
         public static double ToDouble(this string inputvalue)
