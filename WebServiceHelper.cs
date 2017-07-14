@@ -10,7 +10,7 @@ using System.Text;
 namespace Zsq.Utils { 
     public sealed class WebServiceHelper
     {
-        private string WebAPI(string url,byte[] data, WebRequestMothod mothod)
+        public string WebAPI(string url,byte[] data, WebRequestMothod mothod)
         {
             try
             {
