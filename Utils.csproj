@@ -78,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\Log4j.Config" />
+    <None Include="Log4j.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
